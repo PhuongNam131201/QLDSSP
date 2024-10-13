@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835142043417",
+    "project_id": "qldssp",
+    "storage_bucket": "qldssp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835142043417:android:17ff68aea88ee0d5502788",
+        "android_client_info": {
+          "package_name": "com.example.qldssp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPKGwdAPKbE23fnjK01VpdUzW5kg2oBu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
