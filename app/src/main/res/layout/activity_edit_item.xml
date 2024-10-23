@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/titleInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tiêu đề" />
+
+    <EditText
+        android:id="@+id/desInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Mô tả" />
+
+    <EditText
+        android:id="@+id/priceInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Giá"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/ratingInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Đánh giá"
+        android:inputType="numberDecimal" />
+
+    <!-- Hiển thị danh sách các URL ảnh -->
+    <LinearLayout
+        android:id="@+id/imageUrlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/addImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm URL ảnh"
+        android:background="@color/Cam"/>
+
+</LinearLayout>

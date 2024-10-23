@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -39,13 +39,13 @@
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Xin chào" />
 
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Nam"
+                        android:text="Quản lý sản phẩm"
                         android:textColor="@color/black"
                         android:textSize="18dp"
                         android:textStyle="bold" />
@@ -72,18 +72,23 @@
                     android:id="@+id/viewPagerSlider"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:layout_marginBottom="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
                     android:id="@+id/dotIndicator"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="10dp"
                     android:visibility="gone"
-                    app:dotsColor="@color/green"
+                    app:dotsColor="@color/grey"
                     app:dotsCornerRadius="8dp"
                     app:dotsSize="6dp"
                     app:dotsSpacing="2dp"
@@ -93,7 +98,7 @@
                     app:layout_constraintHorizontal_bias="0.57"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/viewPagerSlider"
-                    app:selectedDotColor="@color/green"
+                    app:selectedDotColor="@color/Cam"
                     tools:visibility="visible" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -110,7 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="A"
+                    android:text="Danh mục"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold" />
@@ -119,8 +124,8 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B"
-                    android:textColor="@color/green" />
+                    android:text="xem tất cả"
+                    android:textColor="@color/Cam" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -163,7 +168,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="C"
+                    android:text="Sản phẩm"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold" />
@@ -172,8 +177,8 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B"
-                    android:textColor="@color/green" />
+                    android:text="xem tất cả"
+                    android:textColor="@color/Cam" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -216,88 +221,109 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="parent"
          >
-        <com.google.android.material.bottomnavigation.BottomNavigationView
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/green_bg"-->
+<!--            android:layout_gravity="bottom"-->
+
+<!--            >-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                >-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="0.2"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="Trang chủ"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/white"-->
+
+<!--                        android:textSize="15dp" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="0.2"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="Thêm"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="15dp" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="0.2"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="Sửa"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="15dp" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0.2"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="Xoá"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="15dp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/green_bg"
-            android:layout_gravity="bottom"
-            >
-            <LinearLayout
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@+id/addBtn"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginBottom="8dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp">
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/green_bg"
+                android:contentDescription="@string/image_button_description" />
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical">
+            <TextView
 
-                    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm mới"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center" />
+        </FrameLayout>
 
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="D"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="10sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="D"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="10sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="D"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="10sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="D"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="10sp" />
-                </LinearLayout>
-            </LinearLayout>
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 

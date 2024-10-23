@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.QLDSSP" parent="Base.Theme.QLDSSP" />
+    <style name="CircleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+    </style>
 </resources>

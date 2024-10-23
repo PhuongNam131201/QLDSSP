@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">QLDSSP</string>
-    <string name="introText">Xin chao day la danh sach san pham &amp;
-    <font color="#169955">Phuong Nam &amp; 2124802010457</font> San Pham</string>
+    <string name="introText">Xin chào!!
+    <font color="#169955">Phuong Nam</font></string>
     <string name="introSubtitle"> dai hoc thu dau mot</string>
+    <string name="image_button_description">Thêm</string>
 </resources>
